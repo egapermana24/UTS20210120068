@@ -9,6 +9,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'untukmu_model.dart';
 export 'untukmu_model.dart';
 
@@ -57,18 +58,17 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
         key: scaffoldKey,
         backgroundColor: Colors.white,
         drawer: Container(
-          width: 250.0,
+          width: 250,
           child: Drawer(
-            elevation: 16.0,
+            elevation: 16,
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(-1.0, 0.0),
+                    alignment: AlignmentDirectional(-1, 0),
                     child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -79,21 +79,21 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                         },
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.5,
-                          height: 70.0,
+                          height: 70,
                           decoration: BoxDecoration(
                             color: Color(0xFF00549A),
                             borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(0.0),
-                              bottomRight: Radius.circular(100.0),
-                              topLeft: Radius.circular(0.0),
-                              topRight: Radius.circular(100.0),
+                              bottomLeft: Radius.circular(0),
+                              bottomRight: Radius.circular(100),
+                              topLeft: Radius.circular(0),
+                              topRight: Radius.circular(100),
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: AlignmentDirectional(-1, 0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  35.0, 0.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(35, 0, 0, 0),
                               child: Text(
                                 'KABARI',
                                 style: FlutterFlowTheme.of(context)
@@ -101,8 +101,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                     .override(
                                       fontFamily: 'Roboto',
                                       color: Color(0xFFFAFAFA),
-                                      fontSize: 25.0,
-                                      letterSpacing: 3.0,
+                                      fontSize: 25,
+                                      letterSpacing: 3,
                                       fontWeight: FontWeight.w600,
                                     ),
                               ),
@@ -113,14 +113,12 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 10.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -128,18 +126,18 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               Icon(
                                 Icons.login_rounded,
                                 color: Color(0xFF00549A),
-                                size: 24.0,
+                                size: 24,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 0.0, 0.0, 0.0),
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                                 child: Text(
                                   'Masuk',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                       ),
                                 ),
                               ),
@@ -147,21 +145,19 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                           ),
                         ),
                         Divider(
-                          thickness: 1.0,
+                          thickness: 1,
                           color: Color(0x4057636C),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 10.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -169,18 +165,18 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               Icon(
                                 Icons.exit_to_app_sharp,
                                 color: Color(0xFF00549A),
-                                size: 24.0,
+                                size: 24,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 0.0, 0.0, 0.0),
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                                 child: Text(
                                   'Daftar',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                       ),
                                 ),
                               ),
@@ -188,15 +184,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                           ),
                         ),
                         Divider(
-                          thickness: 1.0,
+                          thickness: 1,
                           color: Color(0x4057636C),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 35.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 35, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -209,8 +204,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -221,7 +216,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -229,7 +224,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -237,8 +232,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -251,8 +245,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -263,7 +257,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -271,7 +265,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -279,8 +273,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -293,8 +286,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -305,7 +298,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -313,7 +306,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -321,8 +314,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -335,8 +327,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -347,7 +339,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -355,7 +347,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -363,8 +355,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -377,8 +368,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -389,7 +380,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -397,7 +388,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -418,33 +409,33 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
-                borderRadius: 20.0,
-                buttonSize: 40.0,
+                borderRadius: 20,
+                buttonSize: 40,
                 icon: Icon(
                   Icons.menu,
                   color: Color(0xFF00549A),
-                  size: 24.0,
+                  size: 24,
                 ),
                 onPressed: () async {
                   context.pop();
                 },
               ),
               title: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0, 0),
                 child: Text(
                   'KABARI',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Roboto',
                         color: Color(0xFF00549A),
-                        fontSize: 22.0,
-                        letterSpacing: 3.0,
+                        fontSize: 22,
+                        letterSpacing: 3,
                         fontWeight: FontWeight.w600,
                       ),
                 ),
               ),
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -454,8 +445,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                       context.pushNamed('Akun');
                     },
                     child: Container(
-                      width: 30.0,
-                      height: 30.0,
+                      width: 30,
+                      height: 30,
                       clipBehavior: Clip.antiAlias,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
@@ -469,7 +460,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                 ),
               ],
               centerTitle: false,
-              elevation: 0.0,
+              elevation: 0,
             )
           ],
           body: Builder(
@@ -486,17 +477,17 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                           children: [
                             Material(
                               color: Colors.transparent,
-                              elevation: 1.0,
+                              elevation: 1,
                               child: Container(
-                                width: MediaQuery.of(context).size.width * 1.0,
-                                height: 50.0,
+                                width: MediaQuery.of(context).size.width,
+                                height: 50,
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 0.0, 0.0),
+                                      20, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -504,8 +495,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Align(
-                                        alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                        alignment: AlignmentDirectional(-1, 0),
                                         child: Text(
                                           'Rekomendasi Untukmu',
                                           style: FlutterFlowTheme.of(context)
@@ -513,15 +503,15 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                               .override(
                                                 fontFamily: 'Roboto',
                                                 color: Color(0xFF00549A),
-                                                fontSize: 16.0,
+                                                fontSize: 16,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                         ),
                                       ),
                                       SizedBox(
-                                        width: 100.0,
+                                        width: 100,
                                         child: Divider(
-                                          thickness: 5.0,
+                                          thickness: 5,
                                           color: Color(0xFF00549A),
                                         ),
                                       ),
@@ -531,15 +521,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 5.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                               child: Material(
                                 color: Colors.transparent,
-                                elevation: 1.0,
+                                elevation: 1,
                                 child: Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 1.0,
-                                  height: 140.0,
+                                  width: MediaQuery.of(context).size.width,
+                                  height: 140,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
@@ -556,15 +545,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           Flexible(
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 10.0, 20.0, 10.0),
+                                                  .fromSTEB(20, 10, 20, 10),
                                               child: ClipRRect(
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(8),
                                                 child: Image.network(
                                                   'https://akcdn.detik.net.id/visual/2022/10/17/polisi-curigai-penjaga-portal-terlibat-pembunuhan-asn-pemkot-semarang_169.jpeg?w=650',
-                                                  width: 120.0,
-                                                  height: 200.0,
+                                                  width: 120,
+                                                  height: 200,
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
@@ -580,8 +568,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 10.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                                0, 10, 0, 0),
                                                     child: Text(
                                                       'Polisi : Putri Pj Gubernur Papua Pegunungan Diduga Mati Lemas-Ada Kekerasan Seks',
                                                       style: FlutterFlowTheme
@@ -598,8 +586,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 0.0, 10.0),
+                                                      .fromSTEB(0, 0, 0, 10),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -622,8 +609,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      11.0,
+                                                                  fontSize: 11,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w500,
@@ -637,8 +623,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      10.0,
+                                                                  fontSize: 10,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
@@ -654,17 +639,16 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0, 0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      25.0, 0.0, 0.0, 0.0),
+                                                  .fromSTEB(25, 0, 0, 0),
                                               child: Icon(
                                                 Icons.bookmark_border,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
-                                                size: 24.0,
+                                                size: 24,
                                               ),
                                             ),
                                           ),
@@ -676,15 +660,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 5.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                               child: Material(
                                 color: Colors.transparent,
-                                elevation: 1.0,
+                                elevation: 1,
                                 child: Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 1.0,
-                                  height: 140.0,
+                                  width: MediaQuery.of(context).size.width,
+                                  height: 140,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
@@ -701,15 +684,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           Flexible(
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 10.0, 20.0, 10.0),
+                                                  .fromSTEB(20, 10, 20, 10),
                                               child: ClipRRect(
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(8),
                                                 child: Image.network(
                                                   'https://cdn0-production-images-kly.akamaized.net/--4D-SdK6jT6Nx2qfo31dUlvkXA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3655794/original/062531300_1638910689-Kasur_1.jpg',
-                                                  width: 120.0,
-                                                  height: 200.0,
+                                                  width: 120,
+                                                  height: 200,
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
@@ -725,8 +707,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 10.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                                0, 10, 0, 0),
                                                     child: Text(
                                                       'Kasur Teknologi Baru Bisa Mematikan 98 persen Virus dan Bakteri di Permukaan Tempat Tidur',
                                                       style: FlutterFlowTheme
@@ -743,8 +725,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 0.0, 10.0),
+                                                      .fromSTEB(0, 0, 0, 10),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -767,8 +748,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      11.0,
+                                                                  fontSize: 11,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w500,
@@ -782,8 +762,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      10.0,
+                                                                  fontSize: 10,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
@@ -799,17 +778,16 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0, 0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      25.0, 0.0, 0.0, 0.0),
+                                                  .fromSTEB(25, 0, 0, 0),
                                               child: Icon(
                                                 Icons.bookmark_border,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
-                                                size: 24.0,
+                                                size: 24,
                                               ),
                                             ),
                                           ),
@@ -821,15 +799,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 5.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                               child: Material(
                                 color: Colors.transparent,
-                                elevation: 1.0,
+                                elevation: 1,
                                 child: Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 1.0,
-                                  height: 140.0,
+                                  width: MediaQuery.of(context).size.width,
+                                  height: 140,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
@@ -846,15 +823,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           Flexible(
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 10.0, 20.0, 10.0),
+                                                  .fromSTEB(20, 10, 20, 10),
                                               child: ClipRRect(
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(8),
                                                 child: Image.network(
                                                   'https://cdn1-production-images-kly.akamaized.net/mjWWzmfnfRQwFXdHnvOTA9FxUCQ=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3567522/original/018445900_1631257195-AQUA_Japan__22_of_126_.jpg',
-                                                  width: 120.0,
-                                                  height: 200.0,
+                                                  width: 120,
+                                                  height: 200,
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
@@ -870,8 +846,8 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 10.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                                0, 10, 0, 0),
                                                     child: Text(
                                                       'Inovasi Produk Rumah Tangga dengan Teknologi Terbaru yang Lebih Hemat di Masa Pandemi',
                                                       style: FlutterFlowTheme
@@ -888,8 +864,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 0.0, 10.0),
+                                                      .fromSTEB(0, 0, 0, 10),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -912,8 +887,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      11.0,
+                                                                  fontSize: 11,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w500,
@@ -927,8 +901,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      10.0,
+                                                                  fontSize: 10,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
@@ -944,17 +917,16 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0, 0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      25.0, 0.0, 0.0, 0.0),
+                                                  .fromSTEB(25, 0, 0, 0),
                                               child: Icon(
                                                 Icons.bookmark_border,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
-                                                size: 24.0,
+                                                size: 24,
                                               ),
                                             ),
                                           ),
@@ -968,18 +940,17 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                             Flexible(
                               child: Material(
                                 color: Colors.transparent,
-                                elevation: 2.0,
+                                elevation: 2,
                                 child: Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 1.0,
-                                  height: 50.0,
+                                  width: MediaQuery.of(context).size.width,
+                                  height: 50,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                   ),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        20.0, 0.0, 0.0, 0.0),
+                                        20, 0, 0, 0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -989,7 +960,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              AlignmentDirectional(-1, 0),
                                           child: Text(
                                             'Mungkin Kamu Suka',
                                             style: FlutterFlowTheme.of(context)
@@ -997,15 +968,15 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                                 .override(
                                                   fontFamily: 'Roboto',
                                                   color: Color(0xFF00549A),
-                                                  fontSize: 16.0,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                           ),
                                         ),
                                         SizedBox(
-                                          width: 100.0,
+                                          width: 100,
                                           child: Divider(
-                                            thickness: 5.0,
+                                            thickness: 5,
                                             color: Color(0xFF00549A),
                                           ),
                                         ),
@@ -1016,16 +987,16 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 10.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.9,
-                                height: 200.0,
+                                height: 200,
                                 child: Stack(
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 40.0),
+                                          0, 0, 0, 40),
                                       child: PageView(
                                         controller:
                                             _model.pageViewController ??=
@@ -1034,31 +1005,31 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                         children: [
                                           ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(8),
                                             child: Image.network(
                                               'https://cdn0-production-images-kly.akamaized.net/3MLMPSoVXWh3rVpZRh7jugYnEs0=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2536868/original/056704700_1544944495-honda.jpg',
-                                              width: 300.0,
-                                              height: 779.0,
+                                              width: 300,
+                                              height: 779,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
                                           ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(8),
                                             child: Image.network(
                                               'https://cdn1-production-images-kly.akamaized.net/RlB6JlVs9JCWJUwY6Mpw6ta-05M=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2879161/original/048669200_1565584885-Traditional_Toraja_House.JPG',
-                                              width: 300.0,
-                                              height: 200.0,
+                                              width: 300,
+                                              height: 200,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
                                           ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(8),
                                             child: Image.network(
                                               'https://cdn1-production-images-kly.akamaized.net/kPeqWgF3oWthiDdrqJe70ilSPA8=/0x0:1080x720/640x360/filters:quality(75):strip_icc():format(jpeg):watermark(kly-media-production/assets/images/watermarks/liputan6/watermark-color-landscape-new.png,540,20,0)/kly-media-production/medias/4076100/original/063355500_1656912899-WhatsApp_Image_2022-07-04_at_12.47.35.jpeg',
-                                              width: 300.0,
-                                              height: 200.0,
+                                              width: 300,
+                                              height: 200,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -1066,10 +1037,10 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 1.0),
+                                      alignment: AlignmentDirectional(0, 1),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 0.0, 0.0, 16.0),
+                                            16, 0, 0, 16),
                                         child: smooth_page_indicator
                                             .SmoothPageIndicator(
                                           controller: _model
@@ -1088,11 +1059,11 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           },
                                           effect: smooth_page_indicator
                                               .ExpandingDotsEffect(
-                                            expansionFactor: 2.0,
-                                            spacing: 8.0,
-                                            radius: 16.0,
-                                            dotWidth: 7.0,
-                                            dotHeight: 8.0,
+                                            expansionFactor: 2,
+                                            spacing: 8,
+                                            radius: 16,
+                                            dotWidth: 7,
+                                            dotHeight: 8,
                                             dotColor:
                                                 FlutterFlowTheme.of(context)
                                                     .accent1,
@@ -1112,10 +1083,10 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                       Flexible(
                         child: Material(
                           color: Colors.transparent,
-                          elevation: 2.0,
+                          elevation: 2,
                           child: Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 50.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 50,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -1125,10 +1096,10 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: AlignmentDirectional(-1, 0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        20.0, 10.0, 0.0, 0.0),
+                                        20, 10, 0, 0),
                                     child: Text(
                                       'Apakah berita diatas cocok untukmu?',
                                       style: FlutterFlowTheme.of(context)
@@ -1136,7 +1107,7 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                           .override(
                                             fontFamily: 'Roboto',
                                             color: Color(0xFF00549A),
-                                            fontSize: 16.0,
+                                            fontSize: 16,
                                             fontWeight: FontWeight.bold,
                                           ),
                                     ),
@@ -1144,14 +1115,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 0.0, 0.0),
+                                      20, 0, 0, 0),
                                   child: Text(
                                     '*beri kami rating agar semakin baik',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          fontSize: 10.0,
+                                          fontSize: 10,
                                           fontWeight: FontWeight.w300,
                                         ),
                                   ),
@@ -1162,15 +1133,14 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0, 10.0, 0.0, 10.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 10),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 5.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                               child: RatingBar.builder(
                                 onRatingUpdate: (newValue) => setState(
                                     () => _model.ratingBarValue = newValue),
@@ -1179,30 +1149,30 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                   color: FlutterFlowTheme.of(context).tertiary,
                                 ),
                                 direction: Axis.horizontal,
-                                initialRating: _model.ratingBarValue ??= 3.0,
+                                initialRating: _model.ratingBarValue ??= 3,
                                 unratedColor:
                                     FlutterFlowTheme.of(context).accent3,
                                 itemCount: 5,
-                                itemSize: 30.0,
+                                itemSize: 30,
                                 glowColor:
                                     FlutterFlowTheme.of(context).tertiary,
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  90.0, 0.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(90, 0, 0, 0),
                               child: FFButtonWidget(
                                 onPressed: () {
                                   print('Button pressed ...');
                                 },
                                 text: 'Batal',
                                 options: FFButtonOptions(
-                                  width: 60.0,
-                                  height: 25.0,
+                                  width: 60,
+                                  height: 25,
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 0.0),
+                                      0, 0, 0, 0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 0.0),
+                                      0, 0, 0, 0),
                                   color: Color(0xFFFAFAFA),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
@@ -1210,12 +1180,12 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                         fontFamily: 'Open Sans',
                                         color: Color(0xFF00549A),
                                       ),
-                                  elevation: 1.0,
+                                  elevation: 1,
                                   borderSide: BorderSide(
                                     color: Colors.transparent,
-                                    width: 1.0,
+                                    width: 1,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
                             ),
@@ -1225,12 +1195,12 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                               },
                               text: 'Oke',
                               options: FFButtonOptions(
-                                width: 60.0,
-                                height: 25.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
+                                width: 60,
+                                height: 25,
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                                iconPadding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                                 color: Color(0xFF00549A),
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
@@ -1238,12 +1208,12 @@ class _UntukmuWidgetState extends State<UntukmuWidget> {
                                       fontFamily: 'Open Sans',
                                       color: Colors.white,
                                     ),
-                                elevation: 1.0,
+                                elevation: 1,
                                 borderSide: BorderSide(
                                   color: Colors.transparent,
-                                  width: 1.0,
+                                  width: 1,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(8),
                               ),
                             ),
                           ],

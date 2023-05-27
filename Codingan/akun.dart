@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'akun_model.dart';
 export 'akun_model.dart';
 
@@ -49,21 +50,21 @@ class _AkunWidgetState extends State<AkunWidget> {
               backgroundColor: Colors.white,
               automaticallyImplyLeading: false,
               title: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0, 0),
                 child: Text(
                   'Akun Saya',
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Open Sans',
                         color: Color(0xFF00549A),
-                        fontSize: 18.0,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                 ),
               ),
               actions: [],
               centerTitle: false,
-              elevation: 0.0,
+              elevation: 0,
             )
           ],
           body: Builder(
@@ -76,14 +77,13 @@ class _AkunWidgetState extends State<AkunWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
                         child: Material(
                           color: Colors.transparent,
-                          elevation: 3.0,
+                          elevation: 3,
                           child: Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 150.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 150,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -95,7 +95,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      40.0, 0.0, 40.0, 0.0),
+                                      40, 0, 40, 0),
                                   child: Text(
                                     'Daftar dan login agar dapat menggunakan fitur lainnya di aplikasi Kabari',
                                     textAlign: TextAlign.center,
@@ -103,7 +103,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Open Sans',
-                                          fontSize: 16.0,
+                                          fontSize: 16,
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
@@ -119,13 +119,13 @@ class _AkunWidgetState extends State<AkunWidget> {
                                       },
                                       text: 'Masuk',
                                       options: FFButtonOptions(
-                                        width: 150.0,
-                                        height: 40.0,
+                                        width: 150,
+                                        height: 40,
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 0.0),
+                                            0, 0, 0, 0),
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
+                                                0, 0, 0, 0),
                                         color: Color(0xFF00549A),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -133,13 +133,12 @@ class _AkunWidgetState extends State<AkunWidget> {
                                               fontFamily: 'Readex Pro',
                                               color: Color(0xFFFAFAFA),
                                             ),
-                                        elevation: 3.0,
+                                        elevation: 3,
                                         borderSide: BorderSide(
                                           color: Colors.transparent,
-                                          width: 1.0,
+                                          width: 1,
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                     ),
                                     FFButtonWidget(
@@ -148,13 +147,13 @@ class _AkunWidgetState extends State<AkunWidget> {
                                       },
                                       text: 'Daftar',
                                       options: FFButtonOptions(
-                                        width: 150.0,
-                                        height: 40.0,
+                                        width: 150,
+                                        height: 40,
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 0.0),
+                                            0, 0, 0, 0),
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
+                                                0, 0, 0, 0),
                                         color: Color(0xFFFAFAFA),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -162,13 +161,12 @@ class _AkunWidgetState extends State<AkunWidget> {
                                               fontFamily: 'Readex Pro',
                                               color: Color(0xFF00549A),
                                             ),
-                                        elevation: 3.0,
+                                        elevation: 3,
                                         borderSide: BorderSide(
                                           color: Color(0xFF00549A),
-                                          width: 2.0,
+                                          width: 2,
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                     ),
                                   ],
@@ -182,8 +180,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -193,11 +191,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.store_sharp,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -221,7 +219,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Open Sans',
-                                            fontSize: 12.0,
+                                            fontSize: 12,
                                           ),
                                     ),
                                   ],
@@ -230,8 +228,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -241,11 +239,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.phone_rounded,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -269,7 +267,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Open Sans',
-                                            fontSize: 12.0,
+                                            fontSize: 12,
                                           ),
                                     ),
                                   ],
@@ -278,8 +276,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -289,11 +287,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.question_answer,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -318,7 +316,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Open Sans',
-                                              fontSize: 12.0,
+                                              fontSize: 12,
                                             ),
                                       ),
                                     ),
@@ -328,8 +326,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -339,11 +337,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.data_usage_rounded,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -367,7 +365,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Open Sans',
-                                            fontSize: 12.0,
+                                            fontSize: 12,
                                           ),
                                     ),
                                   ],
@@ -376,8 +374,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -387,11 +385,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.info_rounded,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -415,7 +413,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Open Sans',
-                                            fontSize: 12.0,
+                                            fontSize: 12,
                                           ),
                                     ),
                                   ],
@@ -424,8 +422,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -435,11 +433,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.app_settings_alt,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -463,7 +461,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Open Sans',
-                                            fontSize: 12.0,
+                                            fontSize: 12,
                                           ),
                                     ),
                                   ],
@@ -472,8 +470,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -483,11 +481,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.local_post_office_sharp,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -511,7 +509,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Open Sans',
-                                            fontSize: 12.0,
+                                            fontSize: 12,
                                           ),
                                     ),
                                   ],
@@ -520,8 +518,8 @@ class _AkunWidgetState extends State<AkunWidget> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 1.0,
-                            height: 75.0,
+                            width: MediaQuery.of(context).size.width,
+                            height: 75,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -531,11 +529,11 @@ class _AkunWidgetState extends State<AkunWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
+                                      20, 0, 20, 0),
                                   child: Icon(
                                     Icons.star,
                                     color: Color(0xFF00549A),
-                                    size: 24.0,
+                                    size: 24,
                                   ),
                                 ),
                                 Column(
@@ -559,7 +557,7 @@ class _AkunWidgetState extends State<AkunWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Open Sans',
-                                            fontSize: 12.0,
+                                            fontSize: 12,
                                           ),
                                     ),
                                   ],

@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'live_model.dart';
 export 'live_model.dart';
 
@@ -44,19 +45,18 @@ class _LiveWidgetState extends State<LiveWidget> {
         key: scaffoldKey,
         backgroundColor: Colors.white,
         drawer: Container(
-          width: 250.0,
+          width: 250,
           child: Drawer(
-            elevation: 16.0,
+            elevation: 16,
             child: SingleChildScrollView(
               controller: _model.columnController3,
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(-1.0, 0.0),
+                    alignment: AlignmentDirectional(-1, 0),
                     child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -67,21 +67,21 @@ class _LiveWidgetState extends State<LiveWidget> {
                         },
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.5,
-                          height: 70.0,
+                          height: 70,
                           decoration: BoxDecoration(
                             color: Color(0xFF00549A),
                             borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(0.0),
-                              bottomRight: Radius.circular(100.0),
-                              topLeft: Radius.circular(0.0),
-                              topRight: Radius.circular(100.0),
+                              bottomLeft: Radius.circular(0),
+                              bottomRight: Radius.circular(100),
+                              topLeft: Radius.circular(0),
+                              topRight: Radius.circular(100),
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: AlignmentDirectional(-1, 0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  35.0, 0.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(35, 0, 0, 0),
                               child: Text(
                                 'KABARI',
                                 style: FlutterFlowTheme.of(context)
@@ -89,8 +89,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     .override(
                                       fontFamily: 'Roboto',
                                       color: Color(0xFFFAFAFA),
-                                      fontSize: 25.0,
-                                      letterSpacing: 3.0,
+                                      fontSize: 25,
+                                      letterSpacing: 3,
                                       fontWeight: FontWeight.w600,
                                     ),
                               ),
@@ -101,14 +101,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 10.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -116,18 +114,18 @@ class _LiveWidgetState extends State<LiveWidget> {
                               Icon(
                                 Icons.login_rounded,
                                 color: Color(0xFF00549A),
-                                size: 24.0,
+                                size: 24,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 0.0, 0.0, 0.0),
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                                 child: Text(
                                   'Masuk',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                       ),
                                 ),
                               ),
@@ -135,21 +133,19 @@ class _LiveWidgetState extends State<LiveWidget> {
                           ),
                         ),
                         Divider(
-                          thickness: 1.0,
+                          thickness: 1,
                           color: Color(0x4057636C),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 10.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -157,18 +153,18 @@ class _LiveWidgetState extends State<LiveWidget> {
                               Icon(
                                 Icons.exit_to_app_sharp,
                                 color: Color(0xFF00549A),
-                                size: 24.0,
+                                size: 24,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 0.0, 0.0, 0.0),
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                                 child: Text(
                                   'Daftar',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                       ),
                                 ),
                               ),
@@ -176,15 +172,14 @@ class _LiveWidgetState extends State<LiveWidget> {
                           ),
                         ),
                         Divider(
-                          thickness: 1.0,
+                          thickness: 1,
                           color: Color(0x4057636C),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 35.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 35, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -197,8 +192,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -209,7 +204,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -217,7 +212,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -225,8 +220,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -239,8 +233,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -251,7 +245,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -259,7 +253,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -267,8 +261,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -281,8 +274,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -293,7 +286,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -301,7 +294,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -309,8 +302,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -323,8 +315,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -335,7 +327,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -343,7 +335,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -351,8 +343,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -365,8 +356,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -377,7 +368,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -385,7 +376,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -406,33 +397,33 @@ class _LiveWidgetState extends State<LiveWidget> {
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
-                borderRadius: 20.0,
-                buttonSize: 40.0,
+                borderRadius: 20,
+                buttonSize: 40,
                 icon: Icon(
                   Icons.menu,
                   color: Color(0xFF00549A),
-                  size: 24.0,
+                  size: 24,
                 ),
                 onPressed: () async {
                   scaffoldKey.currentState!.openDrawer();
                 },
               ),
               title: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0, 0),
                 child: Text(
                   'KABARI',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Roboto',
                         color: Color(0xFF00549A),
-                        fontSize: 22.0,
-                        letterSpacing: 3.0,
+                        fontSize: 22,
+                        letterSpacing: 3,
                         fontWeight: FontWeight.w600,
                       ),
                 ),
               ),
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -442,8 +433,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                       context.pushNamed('Akun');
                     },
                     child: Container(
-                      width: 30.0,
-                      height: 30.0,
+                      width: 30,
+                      height: 30,
                       clipBehavior: Clip.antiAlias,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
@@ -457,7 +448,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                 ),
               ],
               centerTitle: false,
-              elevation: 0.0,
+              elevation: 0,
             )
           ],
           body: Builder(
@@ -478,10 +469,10 @@ class _LiveWidgetState extends State<LiveWidget> {
                           children: [
                             Material(
                               color: Colors.transparent,
-                              elevation: 2.0,
+                              elevation: 2,
                               child: Container(
-                                width: MediaQuery.of(context).size.width * 1.0,
-                                height: 50.0,
+                                width: MediaQuery.of(context).size.width,
+                                height: 50,
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
@@ -493,7 +484,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 0.0, 0.0, 0.0),
+                                          20, 0, 0, 0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -501,11 +492,10 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(-1.0, 0.0),
+                                                AlignmentDirectional(-1, 0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 10.0, 0.0, 0.0),
+                                                  .fromSTEB(0, 10, 0, 0),
                                               child: Text(
                                                 'Sedang Streaming',
                                                 style:
@@ -515,7 +505,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                           fontFamily: 'Roboto',
                                                           color:
                                                               Color(0xFF00549A),
-                                                          fontSize: 16.0,
+                                                          fontSize: 16,
                                                           fontWeight:
                                                               FontWeight.bold,
                                                         ),
@@ -523,9 +513,9 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             ),
                                           ),
                                           SizedBox(
-                                            width: 100.0,
+                                            width: 100,
                                             child: Divider(
-                                              thickness: 5.0,
+                                              thickness: 5,
                                               color: Color(0xFF00549A),
                                             ),
                                           ),
@@ -534,15 +524,15 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 20.0, 0.0),
+                                          0, 0, 20, 0),
                                       child: FlutterFlowIconButton(
-                                        borderRadius: 12.0,
-                                        buttonSize: 30.0,
+                                        borderRadius: 12,
+                                        buttonSize: 30,
                                         fillColor: Color(0xC500549A),
                                         icon: Icon(
                                           Icons.search_outlined,
                                           color: Color(0xFFFAFAFA),
-                                          size: 15.0,
+                                          size: 15,
                                         ),
                                         onPressed: () {
                                           print('IconButton pressed ...');
@@ -554,13 +544,13 @@ class _LiveWidgetState extends State<LiveWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 10.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                               child: FlutterFlowVideoPlayer(
                                 path:
                                     'https://drivekj.my.id/1:/Data/korupsi.mp4',
                                 videoType: VideoType.network,
-                                width: MediaQuery.of(context).size.width * 1.0,
+                                width: MediaQuery.of(context).size.width,
                                 autoPlay: true,
                                 looping: true,
                                 showControls: true,
@@ -569,21 +559,21 @@ class _LiveWidgetState extends State<LiveWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 10.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                               child: Material(
                                 color: Colors.transparent,
-                                elevation: 3.0,
+                                elevation: 3,
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30.0),
+                                  borderRadius: BorderRadius.circular(30),
                                 ),
                                 child: Container(
                                   width:
                                       MediaQuery.of(context).size.width * 0.95,
-                                  height: 60.0,
+                                  height: 60,
                                   decoration: BoxDecoration(
                                     color: Color(0xC500549A),
-                                    borderRadius: BorderRadius.circular(30.0),
+                                    borderRadius: BorderRadius.circular(30),
                                   ),
                                   child: Stack(
                                     children: [
@@ -593,19 +583,18 @@ class _LiveWidgetState extends State<LiveWidget> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20.0, 10.0, 0.0, 0.0),
+                                                    20, 10, 0, 0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 FaIcon(
                                                   FontAwesomeIcons.solidCircle,
                                                   color: Colors.white,
-                                                  size: 12.0,
+                                                  size: 12,
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          10.0, 0.0, 0.0, 0.0),
+                                                      .fromSTEB(10, 0, 0, 0),
                                                   child: Text(
                                                     'Live Streaming',
                                                     style: FlutterFlowTheme.of(
@@ -625,11 +614,10 @@ class _LiveWidgetState extends State<LiveWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(-1.0, 0.0),
+                                                AlignmentDirectional(-1, 0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      45.0, 0.0, 0.0, 0.0),
+                                                  .fromSTEB(45, 0, 0, 0),
                                               child: Text(
                                                 'KABARI',
                                                 style:
@@ -638,8 +626,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                         .override(
                                                           fontFamily: 'Roboto',
                                                           color: Colors.white,
-                                                          fontSize: 15.0,
-                                                          letterSpacing: 3.0,
+                                                          fontSize: 15,
+                                                          letterSpacing: 3,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                         ),
@@ -652,15 +640,15 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         alignment:
                                             AlignmentDirectional(-0.02, 1.91),
                                         child: FlutterFlowIconButton(
-                                          borderRadius: 20.0,
-                                          buttonSize: 30.0,
+                                          borderRadius: 20,
+                                          buttonSize: 30,
                                           fillColor:
                                               FlutterFlowTheme.of(context)
                                                   .secondaryText,
                                           icon: Icon(
                                             Icons.keyboard_arrow_up,
                                             color: Colors.white,
-                                            size: 15.0,
+                                            size: 15,
                                           ),
                                           onPressed: () async {
                                             await _model.columnController1
@@ -680,18 +668,18 @@ class _LiveWidgetState extends State<LiveWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 30.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
                               child: Container(
-                                width: MediaQuery.of(context).size.width * 1.0,
-                                height: 40.0,
+                                width: MediaQuery.of(context).size.width,
+                                height: 40,
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 0.0, 0.0),
+                                      20, 0, 0, 0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment:
@@ -708,9 +696,9 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             ),
                                       ),
                                       SizedBox(
-                                        width: 50.0,
+                                        width: 50,
                                         child: Divider(
-                                          thickness: 5.0,
+                                          thickness: 5,
                                           color: Color(0xFF00549A),
                                         ),
                                       ),
@@ -728,11 +716,10 @@ class _LiveWidgetState extends State<LiveWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 15.0),
+                                      0, 0, 0, 15),
                                   child: Container(
-                                    width:
-                                        MediaQuery.of(context).size.width * 1.0,
-                                    height: 100.0,
+                                    width: MediaQuery.of(context).size.width,
+                                    height: 100,
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
@@ -747,16 +734,14 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             Flexible(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        20.0, 0.0, 0.0, 0.0),
+                                                    .fromSTEB(20, 0, 0, 0),
                                                 child: ClipRRect(
                                                   borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
+                                                      BorderRadius.circular(8),
                                                   child: Image.network(
                                                     'https://drivekj.my.id/1:/Data/sementara/dpr%20injak%20istri.png',
-                                                    width: 150.0,
-                                                    height: 200.0,
+                                                    width: 150,
+                                                    height: 200,
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -773,10 +758,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  20.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
+                                                                  20, 0, 0, 0),
                                                       child: Text(
                                                         'Anggota DPR diduga injak istri yang sedang hamil',
                                                         style:
@@ -796,8 +778,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(20.0, 5.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                                20, 5, 0, 0),
                                                     child: Text(
                                                       '28x ditonton',
                                                       style:
@@ -807,15 +789,15 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
-                                                                fontSize: 12.0,
+                                                                fontSize: 12,
                                                               ),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(20.0,
-                                                                20.0, 0.0, 0.0),
+                                                            .fromSTEB(
+                                                                20, 20, 0, 0),
                                                     child: Text(
                                                       '30 menit yang lalu',
                                                       style: FlutterFlowTheme
@@ -824,7 +806,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 11.0,
+                                                            fontSize: 11,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -839,12 +821,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                           alignment:
                                               AlignmentDirectional(0.68, 1.32),
                                           child: FlutterFlowIconButton(
-                                            borderRadius: 20.0,
-                                            buttonSize: 50.0,
+                                            borderRadius: 20,
+                                            buttonSize: 50,
                                             icon: Icon(
                                               Icons.share_sharp,
                                               color: Color(0xFF00549A),
-                                              size: 20.0,
+                                              size: 20,
                                             ),
                                             onPressed: () {
                                               print('IconButton pressed ...');
@@ -856,12 +838,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                               AlignmentDirectional(0.85, 1.3),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
-                                            borderRadius: 20.0,
-                                            buttonSize: 50.0,
+                                            borderRadius: 20,
+                                            buttonSize: 50,
                                             icon: Icon(
                                               Icons.bookmark_border,
                                               color: Color(0xFF00549A),
-                                              size: 25.0,
+                                              size: 25,
                                             ),
                                             onPressed: () {
                                               print('IconButton pressed ...');
@@ -870,11 +852,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-0.58, 0.0),
+                                              AlignmentDirectional(-0.58, 0),
                                           child: Icon(
                                             Icons.play_circle_outline_rounded,
                                             color: Color(0xC5101213),
-                                            size: 34.0,
+                                            size: 34,
                                           ),
                                         ),
                                       ],
@@ -883,11 +865,10 @@ class _LiveWidgetState extends State<LiveWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 15.0),
+                                      0, 0, 0, 15),
                                   child: Container(
-                                    width:
-                                        MediaQuery.of(context).size.width * 1.0,
-                                    height: 100.0,
+                                    width: MediaQuery.of(context).size.width,
+                                    height: 100,
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
@@ -902,16 +883,14 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             Flexible(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        20.0, 0.0, 0.0, 0.0),
+                                                    .fromSTEB(20, 0, 0, 0),
                                                 child: ClipRRect(
                                                   borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
+                                                      BorderRadius.circular(8),
                                                   child: Image.network(
                                                     'https://drivekj.my.id/1:/Data/sementara/Regulasi.png',
-                                                    width: 150.0,
-                                                    height: 200.0,
+                                                    width: 150,
+                                                    height: 200,
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -928,10 +907,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  20.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
+                                                                  20, 0, 0, 0),
                                                       child: Text(
                                                         'Regulasi Baru Liga 1 Indonesia',
                                                         style:
@@ -951,8 +927,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(20.0, 5.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                                20, 5, 0, 0),
                                                     child: Text(
                                                       '28x ditonton',
                                                       style:
@@ -962,15 +938,15 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
-                                                                fontSize: 12.0,
+                                                                fontSize: 12,
                                                               ),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(20.0,
-                                                                20.0, 0.0, 0.0),
+                                                            .fromSTEB(
+                                                                20, 20, 0, 0),
                                                     child: Text(
                                                       '30 menit yang lalu',
                                                       style: FlutterFlowTheme
@@ -979,7 +955,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 11.0,
+                                                            fontSize: 11,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -995,12 +971,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                               AlignmentDirectional(0.68, 1.32),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
-                                            borderRadius: 20.0,
-                                            buttonSize: 50.0,
+                                            borderRadius: 20,
+                                            buttonSize: 50,
                                             icon: Icon(
                                               Icons.share_sharp,
                                               color: Color(0xFF00549A),
-                                              size: 20.0,
+                                              size: 20,
                                             ),
                                             onPressed: () {
                                               print('IconButton pressed ...');
@@ -1012,12 +988,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                               AlignmentDirectional(0.85, 1.3),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
-                                            borderRadius: 20.0,
-                                            buttonSize: 50.0,
+                                            borderRadius: 20,
+                                            buttonSize: 50,
                                             icon: Icon(
                                               Icons.bookmark_border,
                                               color: Color(0xFF00549A),
-                                              size: 25.0,
+                                              size: 25,
                                             ),
                                             onPressed: () {
                                               print('IconButton pressed ...');
@@ -1026,11 +1002,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-0.58, 0.0),
+                                              AlignmentDirectional(-0.58, 0),
                                           child: Icon(
                                             Icons.play_circle_outline_rounded,
                                             color: Color(0xC5101213),
-                                            size: 34.0,
+                                            size: 34,
                                           ),
                                         ),
                                       ],
@@ -1039,11 +1015,10 @@ class _LiveWidgetState extends State<LiveWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 15.0),
+                                      0, 0, 0, 15),
                                   child: Container(
-                                    width:
-                                        MediaQuery.of(context).size.width * 1.0,
-                                    height: 100.0,
+                                    width: MediaQuery.of(context).size.width,
+                                    height: 100,
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
@@ -1058,16 +1033,14 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             Flexible(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        20.0, 0.0, 0.0, 0.0),
+                                                    .fromSTEB(20, 0, 0, 0),
                                                 child: ClipRRect(
                                                   borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
+                                                      BorderRadius.circular(8),
                                                   child: Image.network(
                                                     'https://drivekj.my.id/1:/Data/sementara/nindy%20ayunda.png',
-                                                    width: 150.0,
-                                                    height: 200.0,
+                                                    width: 150,
+                                                    height: 200,
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -1084,10 +1057,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  20.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
+                                                                  20, 0, 0, 0),
                                                       child: Text(
                                                         'Penyanyi Nindy Ayunda Diperiksa Polisi',
                                                         style:
@@ -1107,8 +1077,8 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(20.0, 5.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                                20, 5, 0, 0),
                                                     child: Text(
                                                       '28x ditonton',
                                                       style:
@@ -1118,15 +1088,15 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
-                                                                fontSize: 12.0,
+                                                                fontSize: 12,
                                                               ),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(20.0,
-                                                                20.0, 0.0, 0.0),
+                                                            .fromSTEB(
+                                                                20, 20, 0, 0),
                                                     child: Text(
                                                       '30 menit yang lalu',
                                                       style: FlutterFlowTheme
@@ -1135,7 +1105,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 11.0,
+                                                            fontSize: 11,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -1151,12 +1121,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                               AlignmentDirectional(0.68, 1.32),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
-                                            borderRadius: 20.0,
-                                            buttonSize: 50.0,
+                                            borderRadius: 20,
+                                            buttonSize: 50,
                                             icon: Icon(
                                               Icons.share_sharp,
                                               color: Color(0xFF00549A),
-                                              size: 20.0,
+                                              size: 20,
                                             ),
                                             onPressed: () {
                                               print('IconButton pressed ...');
@@ -1168,12 +1138,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                               AlignmentDirectional(0.85, 1.3),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
-                                            borderRadius: 20.0,
-                                            buttonSize: 50.0,
+                                            borderRadius: 20,
+                                            buttonSize: 50,
                                             icon: Icon(
                                               Icons.bookmark_border,
                                               color: Color(0xFF00549A),
-                                              size: 25.0,
+                                              size: 25,
                                             ),
                                             onPressed: () {
                                               print('IconButton pressed ...');
@@ -1182,11 +1152,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-0.58, 0.0),
+                                              AlignmentDirectional(-0.58, 0),
                                           child: Icon(
                                             Icons.play_circle_outline_rounded,
                                             color: Color(0xC5101213),
-                                            size: 34.0,
+                                            size: 34,
                                           ),
                                         ),
                                       ],
@@ -1199,18 +1169,17 @@ class _LiveWidgetState extends State<LiveWidget> {
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                         child: Container(
-                          width: MediaQuery.of(context).size.width * 1.0,
-                          height: 40.0,
+                          width: MediaQuery.of(context).size.width,
+                          height: 40,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                20.0, 0.0, 0.0, 0.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -1226,9 +1195,9 @@ class _LiveWidgetState extends State<LiveWidget> {
                                       ),
                                 ),
                                 SizedBox(
-                                  width: 50.0,
+                                  width: 50,
                                   child: Divider(
-                                    thickness: 5.0,
+                                    thickness: 5,
                                     color: Color(0xFF00549A),
                                   ),
                                 ),
@@ -1245,11 +1214,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 15.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
                             child: Container(
-                              width: MediaQuery.of(context).size.width * 1.0,
-                              height: 100.0,
+                              width: MediaQuery.of(context).size.width,
+                              height: 100,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
@@ -1265,14 +1234,14 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  20.0, 0.0, 0.0, 0.0),
+                                                  20, 0, 0, 0),
                                           child: ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(8),
                                             child: Image.network(
                                               'https://drivekj.my.id/1:/Data/sementara/jabatan%20kpk.png',
-                                              width: 150.0,
-                                              height: 200.0,
+                                              width: 150,
+                                              height: 200,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -1287,8 +1256,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             Flexible(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        20.0, 0.0, 0.0, 0.0),
+                                                    .fromSTEB(20, 0, 0, 0),
                                                 child: Text(
                                                   'MK Kabulkan Masa Jabatan KPK Jadi 5 Tahun',
                                                   style: FlutterFlowTheme.of(
@@ -1304,8 +1272,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 5.0, 0.0, 0.0),
+                                                  .fromSTEB(20, 5, 0, 0),
                                               child: Text(
                                                 '28x ditonton',
                                                 style:
@@ -1314,14 +1281,13 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Open Sans',
-                                                          fontSize: 12.0,
+                                                          fontSize: 12,
                                                         ),
                                               ),
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 20.0, 0.0, 0.0),
+                                                  .fromSTEB(20, 20, 0, 0),
                                               child: Text(
                                                 '30 menit yang lalu',
                                                 style:
@@ -1330,7 +1296,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Open Sans',
-                                                          fontSize: 11.0,
+                                                          fontSize: 11,
                                                           fontWeight:
                                                               FontWeight.w300,
                                                         ),
@@ -1345,12 +1311,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     alignment: AlignmentDirectional(0.68, 1.32),
                                     child: FlutterFlowIconButton(
                                       borderColor: Colors.transparent,
-                                      borderRadius: 20.0,
-                                      buttonSize: 50.0,
+                                      borderRadius: 20,
+                                      buttonSize: 50,
                                       icon: Icon(
                                         Icons.share_sharp,
                                         color: Color(0xFF00549A),
-                                        size: 20.0,
+                                        size: 20,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
@@ -1361,12 +1327,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     alignment: AlignmentDirectional(0.85, 1.3),
                                     child: FlutterFlowIconButton(
                                       borderColor: Colors.transparent,
-                                      borderRadius: 20.0,
-                                      buttonSize: 50.0,
+                                      borderRadius: 20,
+                                      buttonSize: 50,
                                       icon: Icon(
                                         Icons.bookmark_border,
                                         color: Color(0xFF00549A),
-                                        size: 25.0,
+                                        size: 25,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
@@ -1374,11 +1340,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-0.58, 0.0),
+                                    alignment: AlignmentDirectional(-0.58, 0),
                                     child: Icon(
                                       Icons.play_circle_outline_rounded,
                                       color: Color(0xC5101213),
-                                      size: 34.0,
+                                      size: 34,
                                     ),
                                   ),
                                 ],
@@ -1386,11 +1352,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 15.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
                             child: Container(
-                              width: MediaQuery.of(context).size.width * 1.0,
-                              height: 100.0,
+                              width: MediaQuery.of(context).size.width,
+                              height: 100,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
@@ -1406,14 +1372,14 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  20.0, 0.0, 0.0, 0.0),
+                                                  20, 0, 0, 0),
                                           child: ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(8),
                                             child: Image.network(
                                               'https://drivekj.my.id/1:/Data/sementara/great.png',
-                                              width: 150.0,
-                                              height: 200.0,
+                                              width: 150,
+                                              height: 200,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -1428,8 +1394,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             Flexible(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        20.0, 0.0, 0.0, 0.0),
+                                                    .fromSTEB(20, 0, 0, 0),
                                                 child: Text(
                                                   'Metro Great Sale One Day Super Special',
                                                   style: FlutterFlowTheme.of(
@@ -1445,8 +1410,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 5.0, 0.0, 0.0),
+                                                  .fromSTEB(20, 5, 0, 0),
                                               child: Text(
                                                 '28x ditonton',
                                                 style:
@@ -1455,14 +1419,13 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Open Sans',
-                                                          fontSize: 12.0,
+                                                          fontSize: 12,
                                                         ),
                                               ),
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 20.0, 0.0, 0.0),
+                                                  .fromSTEB(20, 20, 0, 0),
                                               child: Text(
                                                 '30 menit yang lalu',
                                                 style:
@@ -1471,7 +1434,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Open Sans',
-                                                          fontSize: 11.0,
+                                                          fontSize: 11,
                                                           fontWeight:
                                                               FontWeight.w300,
                                                         ),
@@ -1486,12 +1449,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     alignment: AlignmentDirectional(0.68, 1.32),
                                     child: FlutterFlowIconButton(
                                       borderColor: Colors.transparent,
-                                      borderRadius: 20.0,
-                                      buttonSize: 50.0,
+                                      borderRadius: 20,
+                                      buttonSize: 50,
                                       icon: Icon(
                                         Icons.share_sharp,
                                         color: Color(0xFF00549A),
-                                        size: 20.0,
+                                        size: 20,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
@@ -1502,12 +1465,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     alignment: AlignmentDirectional(0.85, 1.3),
                                     child: FlutterFlowIconButton(
                                       borderColor: Colors.transparent,
-                                      borderRadius: 20.0,
-                                      buttonSize: 50.0,
+                                      borderRadius: 20,
+                                      buttonSize: 50,
                                       icon: Icon(
                                         Icons.bookmark_border,
                                         color: Color(0xFF00549A),
-                                        size: 25.0,
+                                        size: 25,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
@@ -1515,11 +1478,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-0.58, 0.0),
+                                    alignment: AlignmentDirectional(-0.58, 0),
                                     child: Icon(
                                       Icons.play_circle_outline_rounded,
                                       color: Color(0xC5101213),
-                                      size: 34.0,
+                                      size: 34,
                                     ),
                                   ),
                                 ],
@@ -1527,11 +1490,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 15.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
                             child: Container(
-                              width: MediaQuery.of(context).size.width * 1.0,
-                              height: 100.0,
+                              width: MediaQuery.of(context).size.width,
+                              height: 100,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
@@ -1547,14 +1510,14 @@ class _LiveWidgetState extends State<LiveWidget> {
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  20.0, 0.0, 0.0, 0.0),
+                                                  20, 0, 0, 0),
                                           child: ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(8),
                                             child: Image.network(
                                               'https://drivekj.my.id/1:/Data/sementara/kadar.png',
-                                              width: 150.0,
-                                              height: 200.0,
+                                              width: 150,
+                                              height: 200,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -1569,8 +1532,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             Flexible(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        20.0, 0.0, 0.0, 0.0),
+                                                    .fromSTEB(20, 0, 0, 0),
                                                 child: Text(
                                                   'Waspada Kadar Gula Minuman Kemasan',
                                                   style: FlutterFlowTheme.of(
@@ -1586,8 +1548,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 5.0, 0.0, 0.0),
+                                                  .fromSTEB(20, 5, 0, 0),
                                               child: Text(
                                                 '28x ditonton',
                                                 style:
@@ -1596,14 +1557,13 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Open Sans',
-                                                          fontSize: 12.0,
+                                                          fontSize: 12,
                                                         ),
                                               ),
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      20.0, 20.0, 0.0, 0.0),
+                                                  .fromSTEB(20, 20, 0, 0),
                                               child: Text(
                                                 '30 menit yang lalu',
                                                 style:
@@ -1612,7 +1572,7 @@ class _LiveWidgetState extends State<LiveWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Open Sans',
-                                                          fontSize: 11.0,
+                                                          fontSize: 11,
                                                           fontWeight:
                                                               FontWeight.w300,
                                                         ),
@@ -1627,12 +1587,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     alignment: AlignmentDirectional(0.68, 1.32),
                                     child: FlutterFlowIconButton(
                                       borderColor: Colors.transparent,
-                                      borderRadius: 20.0,
-                                      buttonSize: 50.0,
+                                      borderRadius: 20,
+                                      buttonSize: 50,
                                       icon: Icon(
                                         Icons.share_sharp,
                                         color: Color(0xFF00549A),
-                                        size: 20.0,
+                                        size: 20,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
@@ -1643,12 +1603,12 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     alignment: AlignmentDirectional(0.85, 1.3),
                                     child: FlutterFlowIconButton(
                                       borderColor: Colors.transparent,
-                                      borderRadius: 20.0,
-                                      buttonSize: 50.0,
+                                      borderRadius: 20,
+                                      buttonSize: 50,
                                       icon: Icon(
                                         Icons.bookmark_border,
                                         color: Color(0xFF00549A),
-                                        size: 25.0,
+                                        size: 25,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
@@ -1656,11 +1616,11 @@ class _LiveWidgetState extends State<LiveWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-0.58, 0.0),
+                                    alignment: AlignmentDirectional(-0.58, 0),
                                     child: Icon(
                                       Icons.play_circle_outline_rounded,
                                       color: Color(0xC5101213),
-                                      size: 34.0,
+                                      size: 34,
                                     ),
                                   ),
                                 ],

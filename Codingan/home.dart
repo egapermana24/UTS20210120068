@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -47,18 +48,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         key: scaffoldKey,
         backgroundColor: Colors.white,
         drawer: Container(
-          width: 250.0,
+          width: 250,
           child: Drawer(
-            elevation: 16.0,
+            elevation: 16,
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(-1.0, 0.0),
+                    alignment: AlignmentDirectional(-1, 0),
                     child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -69,21 +69,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         },
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.5,
-                          height: 70.0,
+                          height: 70,
                           decoration: BoxDecoration(
                             color: Color(0xFF00549A),
                             borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(0.0),
-                              bottomRight: Radius.circular(100.0),
-                              topLeft: Radius.circular(0.0),
-                              topRight: Radius.circular(100.0),
+                              bottomLeft: Radius.circular(0),
+                              bottomRight: Radius.circular(100),
+                              topLeft: Radius.circular(0),
+                              topRight: Radius.circular(100),
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: AlignmentDirectional(-1, 0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  35.0, 0.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(35, 0, 0, 0),
                               child: Text(
                                 'KABARI',
                                 style: FlutterFlowTheme.of(context)
@@ -91,8 +91,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     .override(
                                       fontFamily: 'Roboto',
                                       color: Color(0xFFFAFAFA),
-                                      fontSize: 25.0,
-                                      letterSpacing: 3.0,
+                                      fontSize: 25,
+                                      letterSpacing: 3,
                                       fontWeight: FontWeight.w600,
                                     ),
                               ),
@@ -103,14 +103,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 10.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -118,18 +116,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               Icon(
                                 Icons.login_rounded,
                                 color: Color(0xFF00549A),
-                                size: 24.0,
+                                size: 24,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 0.0, 0.0, 0.0),
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                                 child: Text(
                                   'Masuk',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                       ),
                                 ),
                               ),
@@ -137,21 +135,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                         ),
                         Divider(
-                          thickness: 1.0,
+                          thickness: 1,
                           color: Color(0x4057636C),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 10.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -159,18 +155,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               Icon(
                                 Icons.exit_to_app_sharp,
                                 color: Color(0xFF00549A),
-                                size: 24.0,
+                                size: 24,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 0.0, 0.0, 0.0),
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                                 child: Text(
                                   'Daftar',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                       ),
                                 ),
                               ),
@@ -178,15 +174,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                         ),
                         Divider(
-                          thickness: 1.0,
+                          thickness: 1,
                           color: Color(0x4057636C),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 35.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 35, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -199,8 +194,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -211,7 +206,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -219,7 +214,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -227,8 +222,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -241,8 +235,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -253,7 +247,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -261,7 +255,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -269,8 +263,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -283,8 +276,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -295,7 +288,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -303,7 +296,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -311,8 +304,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -325,8 +317,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -337,7 +329,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -345,7 +337,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -353,8 +345,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(20, 25, 20, 0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -367,8 +358,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 10.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -379,7 +370,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Open Sans',
-                                        fontSize: 18.0,
+                                        fontSize: 18,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -387,7 +378,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                           Divider(
-                            thickness: 1.0,
+                            thickness: 1,
                             color: Color(0x4057636C),
                           ),
                         ],
@@ -407,33 +398,33 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               backgroundColor: Colors.white,
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
-                borderRadius: 20.0,
-                buttonSize: 40.0,
+                borderRadius: 20,
+                buttonSize: 40,
                 icon: Icon(
                   Icons.menu,
                   color: Color(0xFF00549A),
-                  size: 24.0,
+                  size: 24,
                 ),
                 onPressed: () async {
                   scaffoldKey.currentState!.openDrawer();
                 },
               ),
               title: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0, 0),
                 child: Text(
                   'KABARI',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Roboto',
                         color: Color(0xFF00549A),
-                        fontSize: 22.0,
-                        letterSpacing: 3.0,
+                        fontSize: 22,
+                        letterSpacing: 3,
                         fontWeight: FontWeight.w600,
                       ),
                 ),
               ),
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -443,8 +434,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       context.pushNamed('Akun');
                     },
                     child: Container(
-                      width: 30.0,
-                      height: 30.0,
+                      width: 30,
+                      height: 30,
                       clipBehavior: Clip.antiAlias,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
@@ -458,7 +449,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 ),
               ],
               centerTitle: false,
-              elevation: 0.0,
+              elevation: 0,
             )
           ],
           body: Builder(
@@ -475,7 +466,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         child: Column(
                           children: [
                             Align(
-                              alignment: Alignment(0.0, 0),
+                              alignment: Alignment(0, 0),
                               child: TabBar(
                                 labelColor: Color(0xFF00549A),
                                 unselectedLabelColor: Color(0xFF00549A),
@@ -483,10 +474,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     .titleMedium
                                     .override(
                                       fontFamily: 'Open Sans',
-                                      fontSize: 12.0,
+                                      fontSize: 12,
                                     ),
                                 indicatorColor: Color(0xFF00549A),
-                                indicatorWeight: 3.0,
+                                indicatorWeight: 3,
                                 tabs: [
                                   Tab(
                                     text: 'UTAMA',
@@ -514,21 +505,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           children: [
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 15.0, 0.0, 0.0),
+                                                  .fromSTEB(0, 15, 0, 0),
                                               child: Container(
                                                 width: MediaQuery.of(context)
                                                         .size
                                                         .width *
                                                     0.9,
-                                                height: 40.0,
+                                                height: 40,
                                                 decoration: BoxDecoration(
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .alternate,
                                                   borderRadius:
-                                                      BorderRadius.circular(
-                                                          10.0),
+                                                      BorderRadius.circular(10),
                                                 ),
                                                 child: Row(
                                                   mainAxisSize:
@@ -538,17 +527,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  10.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
+                                                                  10, 0, 0, 0),
                                                       child: Icon(
                                                         Icons.search_rounded,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
-                                                        size: 20.0,
+                                                        size: 20,
                                                       ),
                                                     ),
                                                     Expanded(
@@ -556,10 +542,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         padding:
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
-                                                                    8.0,
-                                                                    0.0,
-                                                                    8.0,
-                                                                    0.0),
+                                                                    8, 0, 8, 0),
                                                         child: TextFormField(
                                                           controller: _model
                                                               .textController,
@@ -577,7 +560,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                       fontFamily:
                                                                           'Open Sans',
                                                                       fontSize:
-                                                                          11.0,
+                                                                          11,
                                                                     ),
                                                             enabledBorder:
                                                                 UnderlineInputBorder(
@@ -586,12 +569,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
-                                                                width: 2.0,
+                                                                width: 2,
                                                               ),
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          8.0),
+                                                                          8),
                                                             ),
                                                             focusedBorder:
                                                                 UnderlineInputBorder(
@@ -599,12 +582,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   BorderSide(
                                                                 color: Color(
                                                                     0x00000000),
-                                                                width: 2.0,
+                                                                width: 2,
                                                               ),
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          8.0),
+                                                                          8),
                                                             ),
                                                             errorBorder:
                                                                 UnderlineInputBorder(
@@ -613,12 +596,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .error,
-                                                                width: 2.0,
+                                                                width: 2,
                                                               ),
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          8.0),
+                                                                          8),
                                                             ),
                                                             focusedErrorBorder:
                                                                 UnderlineInputBorder(
@@ -627,20 +610,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .error,
-                                                                width: 2.0,
+                                                                width: 2,
                                                               ),
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          8.0),
+                                                                          8),
                                                             ),
                                                             contentPadding:
                                                                 EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        10.0),
+                                                                        0,
+                                                                        0,
+                                                                        0,
+                                                                        10),
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
@@ -648,7 +631,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Readex Pro',
-                                                                fontSize: 11.0,
+                                                                fontSize: 11,
                                                               ),
                                                           validator: _model
                                                               .textControllerValidator
@@ -663,29 +646,27 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 15.0, 0.0, 0.0),
+                                                  .fromSTEB(0, 15, 0, 0),
                                               child: Material(
                                                 color: Colors.transparent,
-                                                elevation: 2.0,
+                                                elevation: 2,
                                                 shape: RoundedRectangleBorder(
                                                   borderRadius:
-                                                      BorderRadius.circular(
-                                                          10.0),
+                                                      BorderRadius.circular(10),
                                                 ),
                                                 child: Container(
                                                   width: MediaQuery.of(context)
                                                           .size
                                                           .width *
                                                       0.9,
-                                                  height: 240.0,
+                                                  height: 240,
                                                   decoration: BoxDecoration(
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            10.0),
+                                                            10),
                                                   ),
                                                   child: Column(
                                                     mainAxisSize:
@@ -696,16 +677,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             BorderRadius.only(
                                                           bottomLeft:
                                                               Radius.circular(
-                                                                  0.0),
+                                                                  0),
                                                           bottomRight:
                                                               Radius.circular(
-                                                                  0.0),
+                                                                  0),
                                                           topLeft:
                                                               Radius.circular(
-                                                                  8.0),
+                                                                  8),
                                                           topRight:
                                                               Radius.circular(
-                                                                  8.0),
+                                                                  8),
                                                         ),
                                                         child: Image.asset(
                                                           'assets/images/hero.jpg',
@@ -714,22 +695,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   .size
                                                                   .width *
                                                               0.9,
-                                                          height: 150.0,
+                                                          height: 150,
                                                           fit: BoxFit.cover,
                                                         ),
                                                       ),
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                -1.0, 0.0),
+                                                                -1, 0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      15.0,
-                                                                      15.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                  .fromSTEB(15,
+                                                                      15, 0, 0),
                                                           child: Text(
                                                             'Hampir 100% Warga Papua Selatan Terlindungi BPJS Kesehatan',
                                                             style: FlutterFlowTheme
@@ -745,15 +723,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                -1.0, 0.0),
+                                                                -1, 0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      15.0,
-                                                                      15.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                  .fromSTEB(15,
+                                                                      15, 0, 0),
                                                           child: Text(
                                                             '2 Jam yang lalu',
                                                             style: FlutterFlowTheme
@@ -762,8 +737,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      10.0,
+                                                                  fontSize: 10,
                                                                 ),
                                                           ),
                                                         ),
@@ -775,26 +749,24 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 15.0, 0.0, 0.0),
+                                                  .fromSTEB(0, 15, 0, 0),
                                               child: Container(
                                                 width: MediaQuery.of(context)
                                                         .size
                                                         .width *
                                                     0.9,
-                                                height: 65.0,
+                                                height: 65,
                                                 decoration: BoxDecoration(
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
                                                   borderRadius:
-                                                      BorderRadius.circular(
-                                                          10.0),
+                                                      BorderRadius.circular(10),
                                                   border: Border.all(
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
-                                                    width: 2.0,
+                                                    width: 2,
                                                   ),
                                                 ),
                                                 child: Stack(
@@ -802,7 +774,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              0.0, 0.0),
+                                                              0, 0),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -817,10 +789,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             padding:
                                                                 EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        10.0,
-                                                                        5.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                        10,
+                                                                        5,
+                                                                        0,
+                                                                        0),
                                                             child: Text(
                                                               'TRENDING HARI INI :',
                                                               style: FlutterFlowTheme
@@ -832,7 +804,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     color: Color(
                                                                         0xFF00549A),
                                                                     fontSize:
-                                                                        12.0,
+                                                                        12,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .bold,
@@ -843,17 +815,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             padding:
                                                                 EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        5.0,
-                                                                        0.0),
+                                                                        0,
+                                                                        0,
+                                                                        5,
+                                                                        0),
                                                             child: Icon(
                                                               Icons
                                                                   .arrow_forward_ios_outlined,
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryText,
-                                                              size: 20.0,
+                                                              size: 20,
                                                             ),
                                                           ),
                                                         ],
@@ -862,15 +834,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              0.0, -1.0),
+                                                              0, -1),
                                                       child: Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    10.0,
-                                                                    5.0,
-                                                                    30.0,
-                                                                    7.0),
+                                                                .fromSTEB(10, 5,
+                                                                    30, 7),
                                                         child: Text(
                                                           '                                         Kejagung Sita Mobil Land Rover Milik Johnny G Plate Terkait Kasus Korupsi BTS 4G Bakti Kominfo',
                                                           style: FlutterFlowTheme
@@ -879,7 +848,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
-                                                                fontSize: 12.0,
+                                                                fontSize: 12,
                                                               ),
                                                         ),
                                                       ),
@@ -890,30 +859,27 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 15.0, 0.0, 0.0),
+                                                  .fromSTEB(0, 15, 0, 0),
                                               child: Container(
                                                 width: MediaQuery.of(context)
-                                                        .size
-                                                        .width *
-                                                    1.0,
-                                                height: 40.0,
+                                                    .size
+                                                    .width,
+                                                height: 40,
                                                 decoration: BoxDecoration(
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
                                                   boxShadow: [
                                                     BoxShadow(
-                                                      blurRadius: 1.0,
+                                                      blurRadius: 1,
                                                       color: Color(0x33000000),
-                                                      offset: Offset(0.0, 1.0),
+                                                      offset: Offset(0, 1),
                                                     )
                                                   ],
                                                 ),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          15.0, 0.0, 0.0, 0.0),
+                                                      .fromSTEB(15, 0, 0, 0),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -922,9 +888,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             .spaceBetween,
                                                     children: [
                                                       SizedBox(
-                                                        height: 25.0,
+                                                        height: 25,
                                                         child: VerticalDivider(
-                                                          thickness: 5.0,
+                                                          thickness: 5,
                                                           color:
                                                               Color(0xFF00549A),
                                                         ),
@@ -933,11 +899,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      5.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      5.0),
+                                                                  .fromSTEB(5,
+                                                                      0, 0, 5),
                                                           child: Text(
                                                             'Topik Populer',
                                                             style: FlutterFlowTheme
@@ -956,11 +919,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    0.0,
-                                                                    20.0,
-                                                                    0.0),
+                                                                .fromSTEB(0, 0,
+                                                                    20, 0),
                                                         child: Text(
                                                           'Lihat Semua',
                                                           style: FlutterFlowTheme
@@ -969,7 +929,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
-                                                                fontSize: 10.0,
+                                                                fontSize: 10,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w300,
@@ -986,8 +946,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               children: [
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          20.0, 10.0, 0.0, 0.0),
+                                                      .fromSTEB(20, 10, 0, 0),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -997,16 +956,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             .hashtag,
                                                         color:
                                                             Color(0xFF00549A),
-                                                        size: 24.0,
+                                                        size: 24,
                                                       ),
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(10, 0,
+                                                                    0, 0),
                                                         child: Text(
                                                           'Johnny G Plate',
                                                           style: FlutterFlowTheme
@@ -1026,8 +982,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          20.0, 10.0, 0.0, 0.0),
+                                                      .fromSTEB(20, 10, 0, 0),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -1037,16 +992,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             .hashtag,
                                                         color:
                                                             Color(0xFF00549A),
-                                                        size: 24.0,
+                                                        size: 24,
                                                       ),
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(10, 0,
+                                                                    0, 0),
                                                         child: Text(
                                                           'Sita mobil',
                                                           style: FlutterFlowTheme
@@ -1066,8 +1018,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          20.0, 10.0, 0.0, 0.0),
+                                                      .fromSTEB(20, 10, 0, 0),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -1077,16 +1028,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             .hashtag,
                                                         color:
                                                             Color(0xFF00549A),
-                                                        size: 24.0,
+                                                        size: 24,
                                                       ),
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(10, 0,
+                                                                    0, 0),
                                                         child: Text(
                                                           'Kominfo',
                                                           style: FlutterFlowTheme
@@ -1107,37 +1055,34 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               ],
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
-                                                  0.0, 0.78),
+                                              alignment:
+                                                  AlignmentDirectional(0, 0.78),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 15.0, 0.0, 0.0),
+                                                    .fromSTEB(0, 15, 0, 0),
                                                 child: Container(
                                                   width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
-                                                  height: 40.0,
+                                                      .size
+                                                      .width,
+                                                  height: 40,
                                                   decoration: BoxDecoration(
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     boxShadow: [
                                                       BoxShadow(
-                                                        blurRadius: 1.0,
+                                                        blurRadius: 1,
                                                         color:
                                                             Color(0x33000000),
-                                                        offset:
-                                                            Offset(0.0, 1.0),
+                                                        offset: Offset(0, 1),
                                                       )
                                                     ],
                                                   ),
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 0, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1146,10 +1091,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .spaceBetween,
                                                       children: [
                                                         SizedBox(
-                                                          height: 25.0,
+                                                          height: 25,
                                                           child:
                                                               VerticalDivider(
-                                                            thickness: 5.0,
+                                                            thickness: 5,
                                                             color: Color(
                                                                 0xFF00549A),
                                                           ),
@@ -1159,10 +1104,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             padding:
                                                                 EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        5.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        5.0),
+                                                                        5,
+                                                                        0,
+                                                                        0,
+                                                                        5),
                                                             child: Text(
                                                               'Berita Apa Yang Kamu Suka?',
                                                               style: FlutterFlowTheme
@@ -1181,11 +1126,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      20.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 20, 0),
                                                           child: Text(
                                                             'Lihat Semua',
                                                             style: FlutterFlowTheme
@@ -1194,8 +1136,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Open Sans',
-                                                                  fontSize:
-                                                                      10.0,
+                                                                  fontSize: 10,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w300,
@@ -1213,8 +1154,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               children: [
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          20.0, 10.0, 0.0, 0.0),
+                                                      .fromSTEB(20, 10, 0, 0),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -1300,8 +1240,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
-                                                              iconSize: 18.0,
-                                                              elevation: 4.0,
+                                                              iconSize: 18,
+                                                              elevation: 4,
                                                             ),
                                                             unselectedChipStyle:
                                                                 ChipStyle(
@@ -1322,10 +1262,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               iconColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryText,
-                                                              iconSize: 18.0,
-                                                              elevation: 0.0,
+                                                              iconSize: 18,
+                                                              elevation: 0,
                                                             ),
-                                                            chipSpacing: 12.0,
+                                                            chipSpacing: 12,
                                                             multiselect: true,
                                                             initialized: _model
                                                                     .choiceChipsValues !=
@@ -1360,16 +1300,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 5.0,
+                                            elevation: 5,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 420.0,
+                                                  .size
+                                                  .width,
+                                              height: 420,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -1384,20 +1323,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     'assets/images/hero.jpg',
                                                     width:
                                                         MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            1.0,
-                                                    height: 250.0,
+                                                            .size
+                                                            .width,
+                                                    height: 250,
                                                     fit: BoxFit.cover,
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Hampir 100% Warga Papua Selatan Terlindungi BPJS Kesehatan',
                                                       style: FlutterFlowTheme
@@ -1408,7 +1343,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -1417,8 +1352,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Pemerintah Provinsi Papua Selatan memperkuat komitmennya dalam memberikan jaminan kesehatan yang menyeluruh bagi penduduknya',
                                                       style: FlutterFlowTheme
@@ -1427,7 +1362,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -1436,8 +1371,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1448,7 +1383,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '15.11 WIB',
                                                               style: FlutterFlowTheme
@@ -1458,7 +1393,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -1469,23 +1404,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
                                                           Icons.bookmark_border,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -1498,16 +1430,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 5.0,
+                                            elevation: 5,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 420.0,
+                                                  .size
+                                                  .width,
+                                              height: 420,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -1522,20 +1453,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     'https://drivekj.my.id/1:/Data/sementara/buku%20bad%20wolf.png',
                                                     width:
                                                         MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            1.0,
-                                                    height: 250.0,
+                                                            .size
+                                                            .width,
+                                                    height: 250,
                                                     fit: BoxFit.cover,
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Berburu Buku di Big Bad Wolf 2023',
                                                       style: FlutterFlowTheme
@@ -1546,7 +1473,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -1555,8 +1482,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Big Bad Wolf membnoyong sekitar 5 juta buku dari berbagai negara dan daerah di Indonesia dalam bazar yang berlangsung pada 26 Mei hingga 5 Juni 2023. Acara tersebut mengusung tema #bacaitukeren.',
                                                       style: FlutterFlowTheme
@@ -1565,7 +1492,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -1574,8 +1501,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1586,7 +1513,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '13.11 WIB',
                                                               style: FlutterFlowTheme
@@ -1596,7 +1523,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -1607,23 +1534,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
                                                           Icons.bookmark_border,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -1636,16 +1560,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 5.0,
+                                            elevation: 5,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 420.0,
+                                                  .size
+                                                  .width,
+                                              height: 420,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -1660,20 +1583,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     'https://akcdn.detik.net.id/community/media/visual/2023/03/21/direktur-tindak-pidana-umum-dirtipidum-bareskrim-polri-brigjen-djuhandhani_169.jpeg?w=700&q=90',
                                                     width:
                                                         MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            1.0,
-                                                    height: 250.0,
+                                                            .size
+                                                            .width,
+                                                    height: 250,
                                                     fit: BoxFit.cover,
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Polri: 20 WNI Korban Scaming Internasional Filipina Tiba di Indonesia',
                                                       style: FlutterFlowTheme
@@ -1684,7 +1603,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -1693,8 +1612,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Sebanyak 20 WNI yang menjadi korban scamming internasional di Filipina telah dipulangkan ke Indonesia. Pemulangan WNI lainnya akan dilakukan secara bertahap.',
                                                       style: FlutterFlowTheme
@@ -1703,7 +1622,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -1712,8 +1631,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1724,7 +1643,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '12.11 WIB',
                                                               style: FlutterFlowTheme
@@ -1734,7 +1653,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -1745,23 +1664,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
                                                           Icons.bookmark_border,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -1781,16 +1697,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 5.0,
+                                            elevation: 5,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 420.0,
+                                                  .size
+                                                  .width,
+                                              height: 420,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -1805,20 +1720,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     'https://statik.tempo.co/data/2023/03/16/id_1189189/1189189_720.jpg',
                                                     width:
                                                         MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            1.0,
-                                                    height: 250.0,
+                                                            .size
+                                                            .width,
+                                                    height: 250,
                                                     fit: BoxFit.cover,
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Kejaksaan Agung Periksa 3 Saksi dari Swasta di Kasus Korupsi BTS Kominfo',
                                                       style: FlutterFlowTheme
@@ -1829,7 +1740,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -1838,8 +1749,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Ketut mengatakan pemeriksaan saksi dilakukan untuk memperkuat pembuktian dan melengkapi pemberkasan dalam perkara ini. ',
                                                       style: FlutterFlowTheme
@@ -1848,7 +1759,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -1857,8 +1768,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1869,7 +1780,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '08.11 WIB | Populer #1',
                                                               style: FlutterFlowTheme
@@ -1879,7 +1790,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -1890,23 +1801,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
                                                           Icons.bookmark_border,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -1919,16 +1827,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 5.0,
+                                            elevation: 5,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 420.0,
+                                                  .size
+                                                  .width,
+                                              height: 420,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -1943,20 +1850,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     'https://akcdn.detik.net.id/community/media/visual/2021/06/17/ilustrasi-hotel-5_169.jpeg?w=700&q=90',
                                                     width:
                                                         MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            1.0,
-                                                    height: 250.0,
+                                                            .size
+                                                            .width,
+                                                    height: 250,
                                                     fit: BoxFit.cover,
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Polisi Ungkap Pengakuan Wanita Pesan Hotel Saat Ngamar Bareng Wabup Rohil',
                                                       style: FlutterFlowTheme
@@ -1967,7 +1870,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -1976,8 +1879,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Fakta baru terungkap terkait diamankannya Wakil Bupati Rokan Hilir, H Sulaiman bersama ASN inisial DRS. Polisi memastikan bahwa kamar hotel dipesan DRS.',
                                                       style: FlutterFlowTheme
@@ -1986,7 +1889,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -1995,8 +1898,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2007,7 +1910,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '06.11 WIB | Populer #2',
                                                               style: FlutterFlowTheme
@@ -2017,7 +1920,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -2028,23 +1931,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
                                                           Icons.bookmark_border,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -2057,16 +1957,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 5.0,
+                                            elevation: 5,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 420.0,
+                                                  .size
+                                                  .width,
+                                              height: 420,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -2081,20 +1980,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     'https://akcdn.detik.net.id/community/media/visual/2021/06/11/borgol_169.jpeg?w=700&q=90',
                                                     width:
                                                         MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            1.0,
-                                                    height: 250.0,
+                                                            .size
+                                                            .width,
+                                                    height: 250,
                                                     fit: BoxFit.cover,
                                                   ),
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Melawan Polisi, \'Kapten\' Perampok Minimarket di Jakarta Tewas Ditembak',
                                                       style: FlutterFlowTheme
@@ -2105,7 +2000,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -2114,8 +2009,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Direktorat Reserse Kriminal Umum Polda Metro Jaya mengungkap menangkap komplotan perampok minimarket di wilayah Jakarta. Mereka kerap beraksi menggunakan senjata api.',
                                                       style: FlutterFlowTheme
@@ -2124,7 +2019,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -2133,8 +2028,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2145,7 +2040,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '10.15 WIB | Populer #3',
                                                               style: FlutterFlowTheme
@@ -2155,7 +2050,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -2166,23 +2061,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
                                                           Icons.bookmark_border,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -2202,16 +2094,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 3.0,
+                                            elevation: 3,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 180.0,
+                                                  .size
+                                                  .width,
+                                              height: 180,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -2229,10 +2120,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Berburu Buku di Big Bad Wolf 2023',
                                                       style: FlutterFlowTheme
@@ -2243,7 +2131,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -2252,8 +2140,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Big Bad Wolf membnoyong sekitar 5 juta buku dari berbagai negara dan daerah di Indonesia dalam bazar yang berlangsung pada 26 Mei hingga 5 Juni 2023. Acara tersebut mengusung tema #bacaitukeren.',
                                                       style: FlutterFlowTheme
@@ -2262,7 +2150,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -2271,8 +2159,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2283,7 +2171,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '15.11 WIB | ditambahkan hari ini',
                                                               style: FlutterFlowTheme
@@ -2293,7 +2181,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -2304,16 +2192,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
@@ -2321,7 +2206,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .bookmark_rounded,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -2334,16 +2219,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 3.0,
+                                            elevation: 3,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 180.0,
+                                                  .size
+                                                  .width,
+                                              height: 180,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -2361,10 +2245,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Fahri Septian Resmi Main di Eropa, Gabung Klub Bulgaria',
                                                       style: FlutterFlowTheme
@@ -2375,7 +2256,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -2384,8 +2265,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Atlet voli Indonesia Fahry Septian Putratama resmi main di Eropa setelah gabung klub asal Bulgaria SKV Montana.',
                                                       style: FlutterFlowTheme
@@ -2394,7 +2275,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -2403,8 +2284,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2415,7 +2296,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '15.11 WIB | ditambahkan hari ini',
                                                               style: FlutterFlowTheme
@@ -2425,7 +2306,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -2436,16 +2317,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
@@ -2453,7 +2331,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .bookmark_rounded,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -2466,16 +2344,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 3.0,
+                                            elevation: 3,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 180.0,
+                                                  .size
+                                                  .width,
+                                              height: 180,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -2493,10 +2370,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Gempa Magnitudo 3,3 Guncang Tasikmalaya Malam Ini',
                                                       style: FlutterFlowTheme
@@ -2507,7 +2381,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -2516,8 +2390,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Gempa bumi bermagnitudo 3,3 mengguncang Tasikmalaya, Jawa Barat, Jumat (26/5) malam ini. Mengutip informasi yang disampaikan oleh BMKG melalui akun Twitter mereka, gempa terjadi pada pukul 21.05 WIB.',
                                                       style: FlutterFlowTheme
@@ -2526,7 +2400,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -2535,8 +2409,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2547,7 +2421,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '15.11 WIB | ditambahkan hari ini',
                                                               style: FlutterFlowTheme
@@ -2557,7 +2431,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -2568,16 +2442,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
@@ -2585,7 +2456,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .bookmark_rounded,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -2598,16 +2469,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 3.0,
+                                            elevation: 3,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 180.0,
+                                                  .size
+                                                  .width,
+                                              height: 180,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -2625,10 +2495,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Unhas Ungkap Keseharian Mahasiswa Hilang Diduga Terkait Radikalisme',
                                                       style: FlutterFlowTheme
@@ -2639,7 +2506,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -2648,8 +2515,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Kampus Universitas Hasanuddin (Unhas) angkat bicara soal kabar hilangnya seorang mahasiswa Fakultas Kedokteran, Fikki Dermawan yang ditengarai ikut organisasi radikal.',
                                                       style: FlutterFlowTheme
@@ -2658,7 +2525,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -2667,8 +2534,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2679,7 +2546,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '15.11 WIB | ditambahkan hari ini',
                                                               style: FlutterFlowTheme
@@ -2689,7 +2556,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -2700,16 +2567,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
@@ -2717,7 +2581,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .bookmark_rounded,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
@@ -2730,16 +2594,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 10.0),
+                                                  0, 0, 0, 10),
                                           child: Material(
                                             color: Colors.transparent,
-                                            elevation: 3.0,
+                                            elevation: 3,
                                             child: Container(
                                               width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  1.0,
-                                              height: 180.0,
+                                                  .size
+                                                  .width,
+                                              height: 180,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -2757,10 +2620,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                15.0,
-                                                                10.0,
-                                                                10.0,
-                                                                10.0),
+                                                                15, 10, 10, 10),
                                                     child: Text(
                                                       'Aturan Pilpres Dua Putaran di Indonesia',
                                                       style: FlutterFlowTheme
@@ -2771,7 +2631,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 'Open Sans',
                                                             color: Color(
                                                                 0xFF00549A),
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -2780,8 +2640,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                15.0, 10.0),
+                                                            .fromSTEB(
+                                                                15, 0, 15, 10),
                                                     child: Text(
                                                       'Konstitusi Indonesia UUD 1945 mengatur tentang pemilihan calon presiden dan wakil presiden (pilpres) dua putaran.',
                                                       style: FlutterFlowTheme
@@ -2790,7 +2650,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Open Sans',
-                                                            fontSize: 13.0,
+                                                            fontSize: 13,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                           ),
@@ -2799,8 +2659,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                20.0, 0.0),
+                                                            .fromSTEB(
+                                                                15, 0, 20, 0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2811,7 +2671,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           child: Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.0, 0.0),
+                                                                    -1, 0),
                                                             child: Text(
                                                               '15.11 WIB | ditambahkan hari ini',
                                                               style: FlutterFlowTheme
@@ -2821,7 +2681,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                     fontFamily:
                                                                         'Open Sans',
                                                                     fontSize:
-                                                                        11.0,
+                                                                        11,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w200,
@@ -2832,16 +2692,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0),
+                                                                  .fromSTEB(0,
+                                                                      0, 10, 0),
                                                           child: Icon(
                                                             Icons.share_sharp,
                                                             color: Color(
                                                                 0xC500549A),
-                                                            size: 24.0,
+                                                            size: 24,
                                                           ),
                                                         ),
                                                         Icon(
@@ -2849,7 +2706,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               .bookmark_rounded,
                                                           color:
                                                               Color(0xC500549A),
-                                                          size: 24.0,
+                                                          size: 24,
                                                         ),
                                                       ],
                                                     ),
